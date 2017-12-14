@@ -1,0 +1,1 @@
+﻿$("#pagination-box li.a-last").click();

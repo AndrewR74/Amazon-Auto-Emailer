@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Amazon Email Bot",
+  "description": "Does cool stuff for Amazon",
+  "version": "1.9",
+
+  "permissions": [
+    "https://sellercentral.amazon.com/*", "tabs", "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://sellercentral.amazon.com/*"],
+      "js": ["jquery.min.js", "uri.js", "amazon.js"]
+    }
+  ],
+  "options_page": "options_page.html",
+  "background": {
+    "scripts": ["jquery.min.js", "uri.js", "background.js"]
+  }
+}
